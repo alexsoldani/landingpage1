@@ -39,7 +39,7 @@ landingpage1/
 
 1. Clone o repositório:
 ```bash
-git clone https://github.com/seu-usuario/landingpage1.git
+git clone https://github.com/alexsoldani/landingpage1.git
 ```
 
 2. Abra o arquivo `index.html` em seu navegador ou configure um servidor local.
@@ -115,4 +115,4 @@ Para suporte, envie um email para seu-email@exemplo.com ou abra uma issue no Git
 
 ---
 
-Desenvolvido com ❤️ para servir a comunidade 
+Desenvolvido com ❤️ para servir a comunidade
