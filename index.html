@@ -1,178 +1,194 @@
-<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pastoral Services - Connecting Faith & Community</title>
-    <!-- Google Fonts para visual moderno -->
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    <style>
-      .sr-only {position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);border:0;}
-    </style>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta http-equiv="Content-Style-Type" content="text/css">
+  <title></title>
+  <meta name="Generator" content="Cocoa HTML Writer">
+  <meta name="CocoaVersion" content="2575.6">
+  <style type="text/css">
+    p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica}
+    p.p2 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica; min-height: 14.0px}
+  </style>
 </head>
 <body>
-    <header class="header">
-        <nav class="nav-container" aria-label="Main navigation">
-            <a href="#hero" class="logo" aria-label="Home">Pastoral Services</a>
-            <ul class="nav-links">
-                <li><a href="#about">About</a></li>
-                <li><a href="#services">Services</a></li>
-                <li><a href="#events">Events</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-            <!-- Hamburger menu para mobile (estrutura pronta) -->
-            <!-- <button class="nav-toggle" aria-label="Toggle navigation"><i class="fas fa-bars"></i></button> -->
-        </nav>
-    </header>
-
-    <main>
-      <section class="hero" id="hero">
-          <div class="hero-content">
-              <h1>Welcome to Our Ministry</h1>
-              <p>Connecting hearts, sharing faith, and serving our community with love and compassion.</p>
-              <a href="#contact" class="cta-button">Request Assistance</a>
-          </div>
-          <!-- Sugestão: adicionar imagem/ilustração ao lado -->
-          <!-- <div class="hero-image"><img src="sua-imagem.jpg" alt="Ministry illustration"></div> -->
-      </section>
-
-      <section id="about" class="about">
-          <div class="container">
-              <h2>About Our Ministry</h2>
-              <div class="about-content">
-                  <div class="about-text">
-                      <p>As a dedicated pastor, I am committed to serving our community through spiritual guidance, counseling, and support. My mission is to help people find peace, purpose, and connection through faith.</p>
-                  </div>
-              </div>
-          </div>
-      </section>
-
-      <section id="services" class="services">
-          <div class="container">
-              <h2>Our Services</h2>
-              <div class="services-grid">
-                  <div class="service-card">
-                      <i class="fas fa-hands-helping" aria-hidden="true"></i>
-                      <h3>Spiritual Counseling</h3>
-                      <p>One-on-one guidance and support for life's challenges</p>
-                  </div>
-                  <div class="service-card">
-                      <i class="fas fa-church" aria-hidden="true"></i>
-                      <h3>Home Visits</h3>
-                      <p>Personal visits for prayer, communion, and fellowship</p>
-                  </div>
-                  <div class="service-card">
-                      <i class="fas fa-heart" aria-hidden="true"></i>
-                      <h3>Wedding Ceremonies</h3>
-                      <p>Sacred celebration of love and commitment</p>
-                  </div>
-                  <div class="service-card">
-                      <i class="fas fa-pray" aria-hidden="true"></i>
-                      <h3>Prayer Support</h3>
-                      <p>Intercessory prayer and spiritual guidance</p>
-                  </div>
-              </div>
-          </div>
-      </section>
-
-      <section id="events" class="events">
-          <div class="container">
-              <h2>Upcoming Events</h2>
-              <div class="events-grid">
-                  <div class="event-card">
-                      <div class="event-date">
-                          <span class="month">JUN</span>
-                          <span class="day">15</span>
-                      </div>
-                      <div class="event-details">
-                          <h3>Sunday Service</h3>
-                          <p>10:00 AM - Main Sanctuary</p>
-                      </div>
-                  </div>
-                  <div class="event-card">
-                      <div class="event-date">
-                          <span class="month">JUN</span>
-                          <span class="day">20</span>
-                      </div>
-                      <div class="event-details">
-                          <h3>Prayer Meeting</h3>
-                          <p>7:00 PM - Prayer Room</p>
-                      </div>
-                  </div>
-              </div>
-          </div>
-      </section>
-
-      <section id="contact" class="contact">
-          <div class="container">
-              <h2>Request Assistance</h2>
-              <form class="contact-form" autocomplete="on">
-                  <div class="form-group">
-                      <label for="name" class="sr-only">Your Name</label>
-                      <input type="text" id="name" name="name" required placeholder="Your Name">
-                  </div>
-                  <div class="form-group">
-                      <label for="email" class="sr-only">Your Email</label>
-                      <input type="email" id="email" name="email" required placeholder="Your Email">
-                  </div>
-                  <div class="form-group">
-                      <label for="phone" class="sr-only">Your Phone</label>
-                      <input type="tel" id="phone" name="phone" placeholder="Your Phone">
-                  </div>
-                  <div class="form-group">
-                      <label for="service-type" class="sr-only">Service Type</label>
-                      <select id="service-type" name="service-type" required>
-                          <option value="">Select Service Type</option>
-                          <option value="counseling">Spiritual Counseling</option>
-                          <option value="visit">Home Visit</option>
-                          <option value="wedding">Wedding Ceremony</option>
-                          <option value="prayer">Prayer Support</option>
-                          <option value="other">Other</option>
-                      </select>
-                  </div>
-                  <div class="form-group">
-                      <label for="message" class="sr-only">Message</label>
-                      <textarea id="message" name="message" required placeholder="Please share your request or prayer needs"></textarea>
-                  </div>
-                  <button type="submit" class="submit-button">Send Request</button>
-              </form>
-          </div>
-      </section>
-    </main>
-
-    <footer class="footer">
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-section">
-                    <h3>Connect With Us</h3>
-                    <div class="social-links">
-                        <a href="#" class="social-link" aria-label="Facebook" target="_blank" rel="noopener"><i class="fab fa-facebook"></i></a>
-                        <a href="#" class="social-link" aria-label="Instagram" target="_blank" rel="noopener"><i class="fab fa-instagram"></i></a>
-                        <a href="#" class="social-link" aria-label="YouTube" target="_blank" rel="noopener"><i class="fab fa-youtube"></i></a>
-                    </div>
-                </div>
-                <div class="footer-section">
-                    <h3>Contact Information</h3>
-                    <p>Email: <a href="mailto:pastor@example.com">pastor@example.com</a></p>
-                    <p>Phone: <a href="tel:5551234567">(555) 123-4567</a></p>
-                </div>
-            </div>
-            <div class="footer-bottom">
-                <p>&copy; 2024 Pastoral Services. All rights reserved.</p>
-            </div>
-        </div>
-    </footer>
-
-    <button onclick="window.scrollTo({top: 0, behavior: 'smooth'});" class="back-to-top" aria-label="Back to top" style="position:fixed;bottom:32px;right:32px;display:none;z-index:999;">⬆️</button>
-    <script>
-      // Exibe o botão após rolar a página
-      const btn = document.querySelector('.back-to-top');
-      window.addEventListener('scroll', () => {
-        btn.style.display = window.scrollY > 300 ? 'block' : 'none';
-      });
-    </script>
-    <script src="script.js"></script>
+<p class="p1">&lt;!DOCTYPE html&gt;</p>
+<p class="p1">&lt;html lang="en"&gt;</p>
+<p class="p1">&lt;head&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;meta charset="UTF-8"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;title&gt;Pastoral Services - Connecting Faith &amp; Community&lt;/title&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;!-- Google Fonts para visual moderno --&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&amp;display=swap" rel="stylesheet"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;link rel="stylesheet" href="styles.css"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;style&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>.sr-only {position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);border:0;}</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/style&gt;</p>
+<p class="p1">&lt;/head&gt;</p>
+<p class="p1">&lt;body&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;header class="header"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;nav class="nav-container" aria-label="Main navigation"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;a href="#hero" class="logo" aria-label="Home"&gt;Pastoral Services&lt;/a&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;ul class="nav-links"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;li&gt;&lt;a href="#about"&gt;About&lt;/a&gt;&lt;/li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;li&gt;&lt;a href="#services"&gt;Services&lt;/a&gt;&lt;/li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;li&gt;&lt;a href="#events"&gt;Events&lt;/a&gt;&lt;/li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;li&gt;&lt;a href="#contact"&gt;Contact&lt;/a&gt;&lt;/li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;/ul&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;!-- Hamburger menu para mobile (estrutura pronta) --&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;!-- &lt;button class="nav-toggle" aria-label="Toggle navigation"&gt;&lt;i class="fas fa-bars"&gt;&lt;/i&gt;&lt;/button&gt; --&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;/nav&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/header&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;main&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;section class="hero" id="hero"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;div class="hero-content"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">              </span>&lt;h1&gt;Welcome to Our Ministry&lt;/h1&gt;</p>
+<p class="p1"><span class="Apple-converted-space">              </span>&lt;p&gt;Connecting hearts, sharing faith, and serving our community with love and compassion.&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">              </span>&lt;a href="#contact" class="cta-button"&gt;Request Assistance&lt;/a&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;!-- Sugestão: adicionar imagem/ilustração ao lado --&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;!-- &lt;div class="hero-image"&gt;&lt;img src="sua-imagem.jpg" alt="Ministry illustration"&gt;&lt;/div&gt; --&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;/section&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;section id="about" class="about"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;div class="container"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">              </span>&lt;h2&gt;About Our Ministry&lt;/h2&gt;</p>
+<p class="p1"><span class="Apple-converted-space">              </span>&lt;div class="about-content"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                  </span>&lt;div class="about-text"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                      </span>&lt;p&gt;As a dedicated pastor, I am committed to serving our community through spiritual guidance, counseling, and support. My mission is to help people find peace, purpose, and connection through faith.&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                  </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">              </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;/section&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;section id="services" class="services"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;div class="container"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">              </span>&lt;h2&gt;Our Services&lt;/h2&gt;</p>
+<p class="p1"><span class="Apple-converted-space">              </span>&lt;div class="services-grid"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                  </span>&lt;div class="service-card"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                      </span>&lt;i class="fas fa-hands-helping" aria-hidden="true"&gt;&lt;/i&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                      </span>&lt;h3&gt;Spiritual Counseling&lt;/h3&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                      </span>&lt;p&gt;One-on-one guidance and support for life's challenges&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                  </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                  </span>&lt;div class="service-card"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                      </span>&lt;i class="fas fa-church" aria-hidden="true"&gt;&lt;/i&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                      </span>&lt;h3&gt;Home Visits&lt;/h3&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                      </span>&lt;p&gt;Personal visits for prayer, communion, and fellowship&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                  </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                  </span>&lt;div class="service-card"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                      </span>&lt;i class="fas fa-heart" aria-hidden="true"&gt;&lt;/i&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                      </span>&lt;h3&gt;Wedding Ceremonies&lt;/h3&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                      </span>&lt;p&gt;Sacred celebration of love and commitment&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                  </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                  </span>&lt;div class="service-card"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                      </span>&lt;i class="fas fa-pray" aria-hidden="true"&gt;&lt;/i&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                      </span>&lt;h3&gt;Prayer Support&lt;/h3&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                      </span>&lt;p&gt;Intercessory prayer and spiritual guidance&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                  </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">              </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;/section&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;section id="events" class="events"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;div class="container"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">              </span>&lt;h2&gt;Upcoming Events&lt;/h2&gt;</p>
+<p class="p1"><span class="Apple-converted-space">              </span>&lt;div class="events-grid"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                  </span>&lt;div class="event-card"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                      </span>&lt;div class="event-date"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                          </span>&lt;span class="month"&gt;JUN&lt;/span&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                          </span>&lt;span class="day"&gt;15&lt;/span&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                      </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                      </span>&lt;div class="event-details"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                          </span>&lt;h3&gt;Sunday Service&lt;/h3&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                          </span>&lt;p&gt;10:00 AM - Main Sanctuary&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                      </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                  </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                  </span>&lt;div class="event-card"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                      </span>&lt;div class="event-date"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                          </span>&lt;span class="month"&gt;JUN&lt;/span&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                          </span>&lt;span class="day"&gt;20&lt;/span&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                      </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                      </span>&lt;div class="event-details"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                          </span>&lt;h3&gt;Prayer Meeting&lt;/h3&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                          </span>&lt;p&gt;7:00 PM - Prayer Room&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                      </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                  </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">              </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;/section&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;section id="contact" class="contact"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;div class="container"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">              </span>&lt;h2&gt;Request Assistance&lt;/h2&gt;</p>
+<p class="p1"><span class="Apple-converted-space">              </span>&lt;form class="contact-form" autocomplete="on"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                  </span>&lt;div class="form-group"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                      </span>&lt;label for="name" class="sr-only"&gt;Your Name&lt;/label&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                      </span>&lt;input type="text" id="name" name="name" required placeholder="Your Name"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                  </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                  </span>&lt;div class="form-group"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                      </span>&lt;label for="email" class="sr-only"&gt;Your Email&lt;/label&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                      </span>&lt;input type="email" id="email" name="email" required placeholder="Your Email"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                  </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                  </span>&lt;div class="form-group"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                      </span>&lt;label for="phone" class="sr-only"&gt;Your Phone&lt;/label&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                      </span>&lt;input type="tel" id="phone" name="phone" placeholder="Your Phone"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                  </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                  </span>&lt;div class="form-group"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                      </span>&lt;label for="service-type" class="sr-only"&gt;Service Type&lt;/label&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                      </span>&lt;select id="service-type" name="service-type" required&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                          </span>&lt;option value=""&gt;Select Service Type&lt;/option&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                          </span>&lt;option value="counseling"&gt;Spiritual Counseling&lt;/option&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                          </span>&lt;option value="visit"&gt;Home Visit&lt;/option&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                          </span>&lt;option value="wedding"&gt;Wedding Ceremony&lt;/option&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                          </span>&lt;option value="prayer"&gt;Prayer Support&lt;/option&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                          </span>&lt;option value="other"&gt;Other&lt;/option&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                      </span>&lt;/select&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                  </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                  </span>&lt;div class="form-group"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                      </span>&lt;label for="message" class="sr-only"&gt;Message&lt;/label&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                      </span>&lt;textarea id="message" name="message" required placeholder="Please share your request or prayer needs"&gt;&lt;/textarea&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                  </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                  </span>&lt;button type="submit" class="submit-button"&gt;Send Request&lt;/button&gt;</p>
+<p class="p1"><span class="Apple-converted-space">              </span>&lt;/form&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;/section&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/main&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;footer class="footer"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="container"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;div class="footer-content"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;div class="footer-section"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;h3&gt;Connect With Us&lt;/h3&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;div class="social-links"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;a href="#" class="social-link" aria-label="Facebook" target="_blank" rel="noopener"&gt;&lt;i class="fab fa-facebook"&gt;&lt;/i&gt;&lt;/a&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;a href="#" class="social-link" aria-label="Instagram" target="_blank" rel="noopener"&gt;&lt;i class="fab fa-instagram"&gt;&lt;/i&gt;&lt;/a&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;a href="#" class="social-link" aria-label="YouTube" target="_blank" rel="noopener"&gt;&lt;i class="fab fa-youtube"&gt;&lt;/i&gt;&lt;/a&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;div class="footer-section"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;h3&gt;Contact Information&lt;/h3&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;p&gt;Email: &lt;a href="mailto:pastor@example.com"&gt;pastor@example.com&lt;/a&gt;&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;p&gt;Phone: &lt;a href="tel:5551234567"&gt;(555) 123-4567&lt;/a&gt;&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;div class="footer-bottom"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;p&gt;&amp;copy; 2024 Pastoral Services. All rights reserved.&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/footer&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;button onclick="window.scrollTo({top: 0, behavior: 'smooth'});" class="back-to-top" aria-label="Back to top" style="position:fixed;bottom:32px;right:32px;display:none;z-index:999;"&gt;⬆️&lt;/button&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;script&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>// Exibe o botão após rolar a página</p>
+<p class="p1"><span class="Apple-converted-space">      </span>const btn = document.querySelector('.back-to-top');</p>
+<p class="p1"><span class="Apple-converted-space">      </span>window.addEventListener('scroll', () =&gt; {</p>
+<p class="p1"><span class="Apple-converted-space">        </span>btn.style.display = window.scrollY &gt; 300 ? 'block' : 'none';</p>
+<p class="p1"><span class="Apple-converted-space">      </span>});</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/script&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;script src="script.js"&gt;&lt;/script&gt;</p>
+<p class="p1">&lt;/body&gt;</p>
+<p class="p1">&lt;/html&gt;</p>
 </body>
 </html>
